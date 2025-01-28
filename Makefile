@@ -6,3 +6,6 @@ brain-games: # Start brain-games.js
 
 publish: # Publish the package
 	npm publish --dry-run
+
+lint: # start eslint
+		npx eslint .
