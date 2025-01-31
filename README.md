@@ -11,3 +11,6 @@ https://asciinema.org/a/KGGjUbXLrGcSo6VTAeH6EeaGn
 
 # Asciinema brain-gcd game record
 https://asciinema.org/a/UAxxMVPFwWB7MwzViZ7P9qoyd
+
+# Asciinema brain-progression game record
+https://asciinema.org/a/1OdYlP3ChFNzFLc7vqd3LMOLg

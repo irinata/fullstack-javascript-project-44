@@ -1,5 +1,6 @@
 import { createGameContext } from './context.js';
 
+// generate number from 1 to maxNumber
 function getRandomNumber(maxNumber) {
   return Math.ceil(Math.random() * maxNumber);
 }
@@ -21,7 +22,7 @@ function isUserAnswerCorrect(ctx, userAnswer, correctAnswer) {
   if (userAnswer === correctAnswer) {
     ctx.output('Correct!');
   } else {
-    ctx.output(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
+    ctx.output(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     ctx.output(`Let's try again, ${ctx.userName}!`);
     result = false;
   }
