@@ -5,3 +5,6 @@
 
 # Asciinema brain-even game record
 https://asciinema.org/a/0P3WrlxS4YzjWFdPytj9qqdP9
+
+# Asciinema brain-calc game record
+https://asciinema.org/a/KGGjUbXLrGcSo6VTAeH6EeaGn
