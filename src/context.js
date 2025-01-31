@@ -1,11 +1,20 @@
-import * as cli from '../src/cli.js';
+import { askQuestion } from './cli.js';
 
-function getGameContext() {
-    const userName = cli.askQuestion('May I have your name? ');
-
-    return {
-        username: userName,
-    }
+function output(msg) {
+  console.log(msg);
 }
 
-export {getGameContext as default};
+function askUser(question) {
+  return askQuestion(question);
+}
+
+function createGameContext() {
+  return {
+    username: undefined,
+    output,
+    askUser,
+    attemptsNumber: 3,
+  };
+}
+
+export { createGameContext };

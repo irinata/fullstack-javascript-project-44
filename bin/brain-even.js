@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
-import getGameContext from '../src/context.js';
-import evenNumberGame from '../src/brain-even.js';
+import { runGame } from '../src/index.js';
+import { evenNumberGame } from '../src/games/brain-even.js';
 
-console.log('Welcome to the Brain Games!');
-
-const gameContext = getGameContext();
-evenNumberGame(gameContext);
+runGame(evenNumberGame);
