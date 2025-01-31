@@ -26,7 +26,7 @@ function calcGame(context, showGameRules) {
     return true;
   }
   const operations = ['+', '-', '*'];
-  const op = operations[getRandomNumber(3) - 1];
+  const op = operations[getRandomNumber(operations.length) - 1];
 
   const maxNumber = op === '*' ? 10 : 30;
   const params = Array.from({ length: 2 }, () => getRandomNumber(maxNumber));
