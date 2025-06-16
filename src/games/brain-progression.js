@@ -25,16 +25,16 @@ function progressionGame(context, showGameRules) {
     return true
   }
   const progression = getNewProgression()
-
   const removeIndex = getRandomNumber(progression.length) - 1
-  const partBeforeDots = progression.slice(0, removeIndex)
-  const partAfterDots = progression.slice(removeIndex + 1)
 
-  const param = `${partBeforeDots.join(' ')} .. ${partAfterDots.join(' ')}`
+  const part1 = progression.slice(0, removeIndex).join(' ')
+  const part2 = progression.slice(removeIndex + 1).join(' ')
 
-  let correctAnswer = progression[removeIndex]
-  correctAnswer = correctAnswer.toString()
+  const param = [part1, '..', part2]
+    .filter((item) => item !== '')
+    .join(' ')
 
+  const correctAnswer = (progression[removeIndex]).toString()
   showQuestion(context, param)
   const answer = askUserAnswer(context)
 
