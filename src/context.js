@@ -1,11 +1,11 @@
-import { askQuestion } from './cli.js';
+import { askQuestion } from './cli.js'
 
 function output(msg) {
-  console.log(msg);
+  console.log(msg)
 }
 
 function askUser(question) {
-  return askQuestion(question);
+  return askQuestion(question)
 }
 
 function createGameContext() {
@@ -14,7 +14,7 @@ function createGameContext() {
     output,
     askUser,
     attemptsNumber: 3,
-  };
+  }
 }
 
-export { createGameContext };
+export { createGameContext }
