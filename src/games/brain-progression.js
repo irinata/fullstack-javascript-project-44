@@ -31,7 +31,7 @@ function progressionGame(context, showGameRules) {
   const part2 = progression.slice(removeIndex + 1).join(' ')
 
   const param = [part1, '..', part2]
-    .filter((item) => item !== '')
+    .filter(item => item !== '')
     .join(' ')
 
   const correctAnswer = (progression[removeIndex]).toString()

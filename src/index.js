@@ -21,7 +21,8 @@ function isUserAnswerCorrect(ctx, userAnswer, correctAnswer) {
   let result = true
   if (userAnswer === correctAnswer) {
     ctx.output('Correct!')
-  } else {
+  }
+  else {
     ctx.output(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
     ctx.output(`Let's try again, ${ctx.userName}!`)
     result = false
