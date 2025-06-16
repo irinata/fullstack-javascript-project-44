@@ -4,16 +4,8 @@ import {
 
 function findGcd(params) {
   const [param1, param2] = params;
-  const minParam = param1 < param2 ? param1 : param2;
-
-  let result = 1;
-  for (let i = minParam; i >= 2; i--) {
-    if ((param1 % i === 0) && (param2 % i === 0)) {
-      result = i;
-      break;
-    }
-  }
-  return result;
+  const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
+  return getGcd(param1, param2);
 }
 
 function gcdGame(context, showGameRules) {
